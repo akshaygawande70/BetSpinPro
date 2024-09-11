@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(100);
+  }
+}
+
+.animate-zoom {
+  animation: zoom 0.3s forwards;
+}
+
+
+.typewriter-container {
+  height: 40px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+}
