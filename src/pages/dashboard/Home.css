@@ -1,0 +1,46 @@
+.home-container {
+  background-image: url("../../../public/img/texture-shade-shape-shadow-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the rounded table with wooden border */
+.table-wrapper {
+  position: relative;
+  border-radius: 15px; /* Ensure the overall wrapper has rounded corners */
+  overflow: hidden; /* Hide overflow to ensure the border appears rounded */
+}
+
+/* Wooden border with rounded corners */
+.table-wood {
+  position: relative;
+  padding: 1%; /* Adds padding to keep content inside the rounded border */
+  background-image: url('../../../public/img/wood-texture.jpg'); /* Wooden texture */
+}
+
+/* Inner table styling */
+.table-inner {
+  background-color: #228B22; /* Base green color */
+  border-radius: 15px; /* Rounded corners */
+  height: 100%; /* Fill the height */
+  padding: 20px; /* Optional padding */
+
+  /* Simulated velvet texture using gradients */
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.05) 1%, transparent 2%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.03));
+  background-size: 10px 10px, 100% 100%; /* Fine grain texture */
+  background-blend-mode: overlay; /* Overlay the textures */
+
+  /* Vignette effect */
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+
+  /* Optional: Luxurious feel */
+  color: white; /* Text color for better contrast */
+  font-family: 'Georgia', serif; /* Elegant font */
+}
+
